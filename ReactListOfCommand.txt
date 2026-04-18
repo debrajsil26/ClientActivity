@@ -1,0 +1,12 @@
+-- First Command when start a new Front end project
+npm create vite@latest
+
+ Project name:
+|  ClientActivity
+|
+o  Package name:
+|  clientactivity
+
+cd ClientActivity
+  npm install
+  npm run dev
