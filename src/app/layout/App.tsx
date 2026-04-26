@@ -2,7 +2,7 @@ import { Container, CssBaseline } from "@mui/material"
 import axios from "axios";
 import { useEffect, useState } from "react"
 import Navbar from "./NavBar.tsx";
-import ActivityDashboard from "../../features/activities/ActivityDashboard.tsx";
+import ActivityDashboard from "../../features/activities/dashboard/ActivityDashboard.tsx";
 
 function App() {
   const [activities, setActivities] = useState<Activity[]>([])
