@@ -1,9 +1,10 @@
 import { Button, Card,CardMedia, CardActions, CardContent,Typography, Chip } from '@mui/material'
 type Props = {
-    activity: Activity
+    activity: Activity,
+    cancelSelectActivity: () => void;
 }
 
-export default function ActivityDetails({ activity }: Props) {
+export default function ActivityDetails({ activity,cancelSelectActivity }: Props) {
   return (
     <Card sx={{ borderRadius: 3 }}>
         <CardMedia
@@ -19,7 +20,7 @@ export default function ActivityDetails({ activity }: Props) {
         <CardActions sx={{ display: 'flex', justifyContent: 'space-between', pb:2}}>
         <Chip label={activity.category} variant="outlined" />
         <Button size="small"  color="primary">Edit</Button>
-         <Button size="small" color="primary">Cancle</Button>
+         <Button size="small" color="primary" onClick={cancelSelectActivity}>Cancel</Button>
         </CardActions>
     </Card>
     
